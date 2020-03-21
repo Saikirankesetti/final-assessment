@@ -1,0 +1,27 @@
+<div class="card" style="width: 80rem" >
+    <div class="card-body" style="background-color:#ffffff;">
+  <table *ngIf="Customer" class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th >Address</th>
+      <th >Email</th>
+      <th >City</th>
+      <th >State</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let a of Customer">
+      <td>{sai}</td>
+      <td>{k}</td>
+      <td>{kk@gmail.com}</td>
+      <td><a class="btn btn-link" [routerLink]="['/updateCustomer',a.id]" role="button">{}</a></td>
+      <td>{hyd}</td>
+      <td>{hyd}</td>
+      <td>{Ts}</td>
+    </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
